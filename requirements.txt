@@ -1,5 +1,2 @@
-pandas
 streamlit
-geopandas
-seaborn
-plotly
+streamlit-option-menu
