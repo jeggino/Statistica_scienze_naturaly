@@ -36,4 +36,4 @@ if choose == "Teoria":
             esempio: il numero di morti in un anno, il numero di incidenti a km, il numero di colonie a
             kmq, ecc.."""
     
-    st.markdown(body, unsafe_allow_html=False, *, help=None)
+    st.markdown(body, unsafe_allow_html=False,  help=None)
