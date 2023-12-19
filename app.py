@@ -23,3 +23,17 @@ with st.sidebar:
                             "nav-link-selected": {"background-color": "#02ab21"},
                         }
                         )
+
+if choose == "Teoria":
+
+    body = """La variabile casuale discreta di Poisson serve a modellare i fenomeni aleatori che
+            avvengono nel tempo, o nello spazio, quando ci si trova di fronte a fenomeni del tipo:
+            numero di eventi nell’intervallo di tempo, oppure numero di eventi per misura lineare, o
+            numero di eventi per misura di superficie, ecc.. è possibili modellarli con la v.c. di Poisson.
+            Poiché è una variabile discreta, la sua applicazione principale è quando ci si trova di fronte
+            a dati di conteggio, cosa che avviene molto spesso nelle scienze naturali, inoltre gli eventi
+            devono avvenire indipendentemente l’uno dall’altro, non devono influenzarsi a vicenda. Ad
+            esempio: il numero di morti in un anno, il numero di incidenti a km, il numero di colonie a
+            kmq, ecc.."""
+    
+    st.markdown(body, unsafe_allow_html=False, *, help=None)
