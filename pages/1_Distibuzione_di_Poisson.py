@@ -29,7 +29,7 @@ choose = option_menu(None,["Teoria", "Esempi", "Prova con I tuoi dati"],
 
 if choose == "Teoria":
 
-    
+    col1, col2 = st.columns([1,2])
     st.image("https://www.maa.org/sites/default/files/images/upload_library/1/Portraits/poisson.jpg", caption='Siméon Denis Poisson')
 
     
@@ -45,10 +45,8 @@ if choose == "Teoria":
             kmq, ecc.."""
 
     
-    st.markdown(body, unsafe_allow_html=False,  help=None)
-    st.latex(latex, help=None)
-
-    st.subheader("Bibliografia", anchor=None, help=None, divider=False)
+    col1.markdown(body, unsafe_allow_html=False,  help=None)
+    col2.subheader("Bibliografia", anchor=None, help=None, divider=False)
 
 if choose == "Teoria":
 
