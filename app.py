@@ -12,17 +12,17 @@ st.set_page_config(
     }
 )
 
-with st.sidebar:
-    choose = option_menu("Menú", ["Teoria", "Esempi", "Prova con I tuoi dati"],
-                         icons=['book', 'bi-lightbulb', 'kanban',],
-                         menu_icon="app-indicator", default_index=0,
-                         styles={
-                            "container": {"padding": "5!important"},
-                            "icon": {"color": "red", "font-size": "25px"}, 
-                            "nav-link": {"font-size": "16px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
-                            "nav-link-selected": {"background-color": "#02ab21"},
-                        }
-                        )
+
+choose = option_menu("Menú", ["Teoria", "Esempi", "Prova con I tuoi dati"],
+                     icons=['book', 'bi-lightbulb', 'kanban',],
+                     menu_icon="app-indicator", default_index=0,
+                     styles={
+                        "container": {"padding": "5!important"},
+                        "icon": {"color": "red", "font-size": "25px"}, 
+                        "nav-link": {"font-size": "16px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
+                        "nav-link-selected": {"background-color": "#02ab21"},
+                    }
+                    )
 
 if choose == "Teoria":
 
@@ -39,7 +39,7 @@ if choose == "Teoria":
             esempio: il numero di morti in un anno, il numero di incidenti a km, il numero di colonie a
             kmq, ecc.."""
 
-    latex = r""" + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =\sum_{k=0}^{n-1} ar^k =a \left(\frac{1-r^{n}}{1-r}\right)"""
+    # latex = r""" + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =\sum_{k=0}^{n-1} ar^k =a \left(\frac{1-r^{n}}{1-r}\right)"""
     latex = r"""P(X = x) = \frac{\lambda ^ x}{x!}"""
     
     st.markdown(body, unsafe_allow_html=False,  help=None)
