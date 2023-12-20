@@ -5,7 +5,7 @@ from streamlit_option_menu import option_menu
 st.set_page_config(
     page_title="statistica_SN",
     page_icon="🪶",
-    layout="wide",
+    layout="centered",
     initial_sidebar_state="expanded",
     menu_items={
         'About': "# This is a header. This is an *extremely* cool app!"
