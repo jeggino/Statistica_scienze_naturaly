@@ -16,6 +16,7 @@ st.set_page_config(
 choose = option_menu("Menú", ["Teoria", "Esempi", "Prova con I tuoi dati"],
                      icons=['book', 'bi-lightbulb', 'kanban',],
                      menu_icon="app-indicator", default_index=0,
+                      orientation="horizontal",
                      styles={
                         "container": {"padding": "5!important"},
                         "icon": {"color": "red", "font-size": "25px"}, 
