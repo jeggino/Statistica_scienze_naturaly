@@ -42,7 +42,7 @@ if choose == "Teoria":
     latex = r""" + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =\sum_{k=0}^{n-1} ar^k =a \left(\frac{1-r^{n}}{1-r}\right)"""
 
     
-    col1.markdown(body, unsafe_allow_html=False,  help=None)
-    col2.latex(latex, help=None)
+    st.markdown(body, unsafe_allow_html=False,  help=None)
+    st.latex(latex, help=None)
 
     st.header("Bibliografia", anchor=None, help=None, divider=False)
