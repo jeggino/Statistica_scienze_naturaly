@@ -45,4 +45,12 @@ if choose == "Teoria":
     st.markdown(body, unsafe_allow_html=False,  help=None)
     st.latex(latex, help=None)
 
-    st.header("Bibliografia", anchor=None, help=None, divider=False)
+    st.subheader("Bibliografia", anchor=None, help=None, divider=False)
+
+if choose == "Prova con I tuoi dati":
+
+    uploaded_files = st.file_uploader("carica un file CSV", accept_multiple_files=True)
+    for uploaded_file in uploaded_files:
+        bytes_data = uploaded_file.read()
+        st.write("filename:", uploaded_file.name)
+        st.write(bytes_data)
