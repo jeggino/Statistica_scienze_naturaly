@@ -30,7 +30,7 @@ choose = option_menu(None,["Teoria", "Esempi", "Prova con I tuoi dati"],
 if choose == "Teoria":
 
     
-    st.image('"https://www.maa.org/sites/default/files/images/upload_library/1/Portraits/poisson.jpg", caption='Siméon Denis Poisson')
+    st.image("https://www.maa.org/sites/default/files/images/upload_library/1/Portraits/poisson.jpg", caption='Siméon Denis Poisson')
 
     
 
