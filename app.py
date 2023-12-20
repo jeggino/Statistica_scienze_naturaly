@@ -38,4 +38,4 @@ if choose == "Teoria":
     
     st.markdown(body, unsafe_allow_html=False,  help=None)
 
-    st.header("Bibliografia", anchor=None, *, help=None, divider=False)
+    st.header("Bibliografia", anchor=None, * help=None, divider=False)
