@@ -26,6 +26,9 @@ with st.sidebar:
 
 if choose == "Teoria":
 
+    
+    col1, col2 = st.columns([2,1])
+
     body = """La variabile casuale discreta di Poisson serve a modellare i fenomeni aleatori che
             avvengono nel tempo, o nello spazio, quando ci si trova di fronte a fenomeni del tipo:
             numero di eventi nell’intervallo di tempo, oppure numero di eventi per misura lineare, o
@@ -35,7 +38,15 @@ if choose == "Teoria":
             devono avvenire indipendentemente l’uno dall’altro, non devono influenzarsi a vicenda. Ad
             esempio: il numero di morti in un anno, il numero di incidenti a km, il numero di colonie a
             kmq, ecc.."""
+
+    latex = '''
+    a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
+    \sum_{k=0}^{n-1} ar^k =
+    a \left(\frac{1-r^{n}}{1-r}\right)
+    '''
+
     
-    st.markdown(body, unsafe_allow_html=False,  help=None)
+    col1.markdown(body, unsafe_allow_html=False,  help=None)
+    col2.latex(body, help=None)
 
     st.header("Bibliografia", anchor=None, help=None, divider=False)
