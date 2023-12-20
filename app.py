@@ -13,7 +13,7 @@ st.set_page_config(
 )
 
 
-choose = option_men["Teoria", "Esempi", "Prova con I tuoi dati"],
+choose = option_menu(["Teoria", "Esempi", "Prova con I tuoi dati"],
                      icons=['book', 'bi-lightbulb', 'kanban',],
                      menu_icon="app-indicator", default_index=0,
                       orientation="horizontal",
