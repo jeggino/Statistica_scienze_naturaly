@@ -20,7 +20,7 @@ choose = option_menu(None,["Teoria", "Esempi", "Prova con I tuoi dati"],
                      
                      
                      styles={
-                        "container": {"padding": "0!important"},
+                        "container": {"padding": "10!important"},
                         "icon": {"color": "red", "font-size": "25px"}, 
                         "nav-link": {"font-size": "16px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
                         "nav-link-selected": {"background-color": "#02ab21"},
