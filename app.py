@@ -47,6 +47,6 @@ if choose == "Teoria":
 
     
     col1.markdown(body, unsafe_allow_html=False,  help=None)
-    col2.latex(body, help=None)
+    col2.latex(latex, help=None)
 
     st.header("Bibliografia", anchor=None, help=None, divider=False)
