@@ -49,10 +49,11 @@ if choose == "Teoria":
     
     st.subheader("Bibliografia", anchor=None, help=None, divider=False)
 
-if choose == "Teoria":
+if choose == "Esempi":
 
     st.write("qui qualche esempio")
 
 if choose == "..inserisci i tuoi dati":
 
+    st.write("qui possono caricare i loro dati e fare l' analisi")
     uploaded_files = st.file_uploader("", accept_multiple_files=True)
