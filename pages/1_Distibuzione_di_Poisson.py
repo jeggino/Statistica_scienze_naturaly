@@ -30,7 +30,9 @@ choose = option_menu(None,["Teoria", "Esempi", "Prova con I tuoi dati"],
 if choose == "Teoria":
 
     
-    col1, col2 = st.columns([2,1])
+    st.image('"https://www.maa.org/sites/default/files/images/upload_library/1/Portraits/poisson.jpg", caption='Siméon Denis Poisson')
+
+    
 
     body = """La variabile casuale discreta di Poisson serve a modellare i fenomeni aleatori che
             avvengono nel tempo, o nello spazio, quando ci si trova di fronte a fenomeni del tipo:
@@ -42,18 +44,16 @@ if choose == "Teoria":
             esempio: il numero di morti in un anno, il numero di incidenti a km, il numero di colonie a
             kmq, ecc.."""
 
-    # latex = r""" + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =\sum_{k=0}^{n-1} ar^k =a \left(\frac{1-r^{n}}{1-r}\right)"""
-    latex = r"""P(X = x) = \frac{\lambda ^ x}{x!}"""
     
     st.markdown(body, unsafe_allow_html=False,  help=None)
     st.latex(latex, help=None)
 
     st.subheader("Bibliografia", anchor=None, help=None, divider=False)
 
-if choose == "Prova con I tuoi dati":
+if choose == "Teoria":
 
-    uploaded_files = st.file_uploader("carica un file CSV", accept_multiple_files=True)
-    for uploaded_file in uploaded_files:
-        bytes_data = uploaded_file.read()
-        st.write("filename:", uploaded_file.name)
-        st.write(bytes_data)
+    st.write("qui qualche esempio")
+
+if choose == "..inserisci i tuoi dati":
+
+    uploaded_files = st.file_uploader("", accept_multiple_files=True)
